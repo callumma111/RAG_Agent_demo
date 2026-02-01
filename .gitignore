@@ -1,0 +1,27 @@
+# --- 编辑器与系统文件 ---
+.idea/
+.vscode/
+.DS_Store
+*.swp
+
+# --- Python 环境 ---
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*.spec
+
+# --- 敏感信息 (API Keys) ---
+.env
+
+# --- RAG 数据与索引 (全局匹配) ---
+# 去掉开头的 / 可以递归排除所有子目录下的同名文件夹
+data/
+chroma_db/
+chat_history/
+*.log
+
+# --- 具体的二进制索引文件 ---
+*.bin
+*.sqlite3
